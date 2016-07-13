@@ -7,28 +7,35 @@ a{
   margin:0;
 }
 
+h2.titulo{
+  font-size: 8em;
+}
 .about{
   background-color: #a8d0e6;
   color:white;
   margin:0 -20px;
-  padding:28% 20%;
+  padding:20% 20%;
 
 }
 
 .portfolio{
-  background-color: #f76c6c;
+  background-color: #24305e;
   color: white;
   margin: -20px;
-  padding:28% 20%;
+  padding:10% 20%;
 }
 
 .contact{
-  background-color: #24305e;
+  background-color: #f76c6c;
   color:white;
   margin: -20px;
-  padding:28% 20%;
+  padding:20% 20%;
 }
 
 h2{
   font-size: 4em;
+}
+
+.img-portfolio{
+  margin:5%;
 }
