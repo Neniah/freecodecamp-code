@@ -1,12 +1,16 @@
+
 function confirmEnding(str, target) {
   // "Never give up and good luck will find you."
   // -- Falcor
-  if (str[str.length-1] == target){
+  var substring = [];
+  substring = str.substr( str.length - target.length, str.length );
+  if( substring == target){
     return true;
-  } else{
+  } else {
     return false;
   }
-  return str;
+  //return substring;
 }
 
-confirmEnding("Bastian", "n");
+//confirmEnding("Bastian", "n");
+confirmEnding("He has to give me a new name", "name");
