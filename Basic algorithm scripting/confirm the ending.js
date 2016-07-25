@@ -12,5 +12,5 @@ function confirmEnding(str, target) {
   //return substring;
 }
 
-//confirmEnding("Bastian", "n");
-confirmEnding("He has to give me a new name", "name");
+confirmEnding("Bastian", "n");
+//confirmEnding("He has to give me a new name", "name");
