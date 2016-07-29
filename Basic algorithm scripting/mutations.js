@@ -1,10 +1,7 @@
-
 function mutation(arr) {
-  arr[0] = arr[0].toLowerCase();
-  arr[1] = arr[1].toLowerCase();
-  var first, second;
-  first = arr[0];
-  second = arr[1];
+  var first = arr[0].toLowerCase();
+  var second = arr[1].toLowerCase();
+
   var count = 0;
   for(var i = 0; i < second.length; i++){
     for(var j = 0; j < first.length; j++){
@@ -13,9 +10,9 @@ function mutation(arr) {
     }
   }
   if(count == second.length)
-    return true;
+  {  return true;}
   else
-    return false;
+   { return false;}
 }
 
-mutation(["hello", "hello"]);
+mutation(["hello", "Hello"]);
