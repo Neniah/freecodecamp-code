@@ -6,13 +6,14 @@
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript">
 
-      var quotes = ["Red", "Green", "Blue", "Pink"];
+      var quotes = ["Red", "Green", "Blue", "Pink", "Brown", "Sky", "Orange"];
 
       $(document).ready(function(){
         $("#btn").click(function(){
 
             var long = quotes.length;
-            alert("There is " + long + " quotes.")
+            var randomize = Math.round(Math.random() * long) + 1;
+            alert("There is " + randomize + ".");
         });
       });
     </script>
