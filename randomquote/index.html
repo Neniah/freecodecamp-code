@@ -5,9 +5,14 @@
     <title>Random Quote</title>
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript">
+
+      var quotes = ["Red", "Green", "Blue", "Pink"];
+
       $(document).ready(function(){
         $("#btn").click(function(){
-          alert("Button Click");
+
+            var long = quotes.length;
+            alert("There is " + long + " quotes.")
         });
       });
     </script>
