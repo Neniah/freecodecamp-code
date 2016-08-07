@@ -13,7 +13,7 @@
 
             var long = quotes.length;
             var randomize = Math.round(Math.random() * long) ;
-            //alert("There is " + randomize + ".");
+
             $(".message").html(quotes[randomize]);
         });
       });
@@ -29,15 +29,9 @@
       The message will go here
     </div>
   </div>
-  <div class = "row text-center">
-    <div class = "col-xs-12">
-      <button id = "getMessage" class = "btn btn-primary">
-        Get Message
-      </button>
-    </div>
-  </div>
 
-  <hr>
+
+
   <div id="res"></div>
   <input type="button" id="btn" value="Generate">
 </div>
