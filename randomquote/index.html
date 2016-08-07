@@ -12,8 +12,9 @@
         $("#btn").click(function(){
 
             var long = quotes.length;
-            var randomize = Math.round(Math.random() * long) + 1;
-            alert("There is " + randomize + ".");
+            var randomize = Math.round(Math.random() * long) ;
+            //alert("There is " + randomize + ".");
+            $(".message").html(quotes[randomize]);
         });
       });
     </script>
