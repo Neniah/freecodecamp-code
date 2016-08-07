@@ -3,15 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>Random Quote</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#btn").click(function(){
+          alert("Button Click");
+        });
+      });
+    </script>
   </head>
   <body>
-    <div class="">
-      <p id="quote"></p>
+    <div class="container-fluid">
+  <div class = "row text-center">
+    <h2>Random Quote</h2>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12 well message">
+      The message will go here
     </div>
-    <button type="button" id="quote"></button>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12">
+      <button id = "getMessage" class = "btn btn-primary">
+        Get Message
+      </button>
+    </div>
+  </div>
 
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="quotes.js"></script>
+  <hr>
+  <div id="res"></div>
+  <input type="button" id="btn" value="Generate">
+</div>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("#getMessage").on("click", function(){
 
+      $(".message").html("Here is the message");
+    });
+  });
+  /* https://www.youtube.com/watch?v=UHCYUTBs9rI */
+  </script>
+
+  </script>
   </body>
 </html>
