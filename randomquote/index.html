@@ -23,15 +23,19 @@
             var randomize = Math.round(Math.random() * long) ;
 
             $(".message").html(quotes[randomize]);
+            document.getElementById("backcolor").className = " background_" + randomize;
         });
       });
     </script>
   </head>
   <body>
-    <div class="container-fluid">
-      <input type="button" id="btn" value="Generate" class="btn btn-large btn-info">
+    <div class="container-fluid" id="backcolor">
+
   <div class = "row text-center">
     <h3>Random Quote</h3>
+  </div>
+  <div class="row text-center">
+    <input type="button" id="btn" value="Generate" class="btn btn-large btn-info">
   </div>
   <div class = "row text-center">
     <h2 class = "col-xs-12 jumbotron message">
