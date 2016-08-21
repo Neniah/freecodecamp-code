@@ -6,3 +6,5 @@ $('div.module');
 $('#mListItem');
 $('#myList li:eq(2)');
 $('#myList #myListItem');
+
+// Exercise 3
