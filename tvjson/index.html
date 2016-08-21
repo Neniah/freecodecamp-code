@@ -6,27 +6,9 @@
   </head>
   <body>
     <script type="text/javascript">
-    var students = [{
-       "name" : "Steve",
-       "age" :  "29",
-       "gender" : "male"
-
-      },
-      {
-       "name" : "Peter",
-       "age" : "32",
-       "gender" : "male"
-
-      },
-      {
-       "name" : "Sophie",
-       "age" : "27",
-       "gender" : "female"
-      }];
-
-      document.writeln(students[0].age); //output would be: 29
-      document.writeln(students[2].name); //output: Sophie
-
+      $.getJSON('https://api.twitch.tv/kraken/streams/freecodecamp?callback=?', function(data) {
+        console.log(data);
+      });
     </script>
 
 
