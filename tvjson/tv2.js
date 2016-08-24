@@ -33,7 +33,7 @@ $(document).ready(function() {
       html += "</li>";
     }
 
-  }
+  }  // displayusers function 
 
   users.forEach(function(user) {
 
